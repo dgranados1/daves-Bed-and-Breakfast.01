@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Reservations - Dave's Bed and Breakfast</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrapper">
+
+<header>
+    <h1>Dave's Bed and Breakfast</h1>
+</header>
+
+<nav>
+<ul> 
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../rooms/express.html">Express Room</a></li>
+    <li><a href="../rooms/standard.html">Standard Room</a></li>
+    <li><a href="../events/weekend.html">Weekend Events</a></li>
+    <li><a href="../contact.html">Contact Us</a></li>
+    <li><a href="../daves_calendar.html">Calendar</a></li> 
+    <li><a href="../costs/reservations.html">Make Reservations</a></li>
+</ul>
+</nav>
+
+<main>
+<h2>Make a reservation at Dave's Bed and Breakfast</h2>
+
+<form>
+
+<!-- GOURMET MEAL -->
+<h3>Our top rated and five star Gourmet Meal!</h3>
+<img src="../images/gourmet_meal.png" alt="Gourmet Meal" width="400"><br>
+<label>
+<input type="checkbox" name="reservation" value="50" onclick="updateTotal()">
+Select Gourmet Meal ($50)
+</label>
+
+<!-- SPA -->
+<section>
+<h3>Our high rated spa treatment</h3>
+<img src="../images/spa.png" alt="Spa Treatment" width="400"><br>
+<label>
+<input type="checkbox" name="reservation" value="80" onclick="updateTotal()">
+Select Spa Treatment ($80)
+</label>
+</section>
+
+<!-- SURF -->
+<section>
+<h3>Surf Lessons</h3>
+<img src="../images/surf_lessons.png" alt="Surf Lessons" width="400"><br>
+<label>
+<input type="checkbox" name="reservation" value="100" onclick="updateTotal()">
+Select Surf Lessons ($100)
+</label>
+</section>
+
+<!-- TOTAL -->
+<h3>Total: $<span id="total">0</span></h3>
+
+<!-- USER INFO -->
+<h3>Your Information</h3>
+
+<label>Name:</label><br>
+<input type="text" name="fullname" required><br><br>
+
+<label>Email:</label><br>
+<input type="email" name="email" required><br><br>
+
+<label>Address:</label><br>
+<input type="text" name="address" required><br><br>
+
+<input type="submit" value="Reserve Now">
+
+</form>
+</main>
+
+<!-- JS FILE -->
+<script src="../scripts/reservations.js"></script>
+
+</body>
+</html>
