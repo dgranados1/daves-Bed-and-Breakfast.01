@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dave's Bed and Breakfast</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+    $(function() {
+        $('#slider img:gt(0)').hide();
+        setInterval(function() {
+            $('#slider img:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slider');
+        }, 4000);
+    });
+    </script>
+</head>
+
+<body>
+<div id="wrapper">
+
+  <header>
+      <h1>Dave's Bed and Breakfast</h1>
+     
+  </header>
+
+  <nav>
+    <ul> 
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms/express.html">Express Room</a></li>
+      <li><a href="rooms/standard.html">Standard Room</a></li>
+      <li><a href="events/weekend.html">Weekend Events</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+       <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="daves_calendar.html">Calendar</a></li> 
+      <li><a href="costs/reservations.html">Make reservations</a></li>
+      <li><a href="shop.html"> Island Shop</a></li> 
+    </ul>
+  </nav>
+
+ <main>
+   <h2>Welcome to Dave's Bed and Breakfast!</h2>
+   <p>Hi there, and welcome to Dave’s Bed and Breakfast, where comfort, warmth, and relaxation are our top priorities. I take pride in offering a cozy stay that feels just like home.</p>
+
+   <h2>What We Provide</h2>
+   <p>At Dave’s Bed and Breakfast, we’re proud to offer everything you need for a comfortable and enjoyable stay. We serve a fresh, delicious breakfast every morning, made with care to give you the perfect start to your day. Our rooms are clean, cozy, and beautifully kept, giving you a quiet place to relax and feel at home. Guests can enjoy free Wi-Fi, comfortable common areas, and a warm, welcoming atmosphere from the moment they walk in. Whether you’re here for a quick getaway or a longer stay, we work hard to make sure your visit is relaxing, enjoyable, and unforgettable.</p>
+
+   <h2>Why Choose Us?</h2>
+   <p>At Dave’s Bed and Breakfast, we offer a warm, welcoming stay that feels just like home, but with all the comfort and relaxation you deserve on a getaway. Guests love our freshly prepared breakfasts, our clean and cozy rooms, and the peaceful atmosphere that makes it easy to unwind after a long day. Whether you’re visiting for a quiet weekend escape or passing through on your travels, our friendly service and attention to detail make every stay special. Come enjoy a place where comfort, quality, and hospitality come together to give you a truly enjoyable experience.</p>
+
+   <h2>Why Our Rooms Are Top of the Line</h2>
+   <p>Our rooms are truly top-of-the-line, offering comfort and style with a unique touch that sets Dave’s Bed and Breakfast apart. Each room is deeply inspired by a Hawaiian theme, bringing warm island colors, relaxing décor, and a peaceful tropical atmosphere to your stay. From quality furnishings to thoughtful details, every room is designed to give guests a refreshing, vacation-like feeling the moment they walk in. We combine modern comfort with island-inspired charm so you can enjoy a stay that is both relaxing and unforgettable.</p>
+
+   <h3>Our Beautiful Bed and Breakfast</h3>
+<div id="slider" style="max-width:600px; margin:20px auto; overflow:hidden; border-radius:8px;">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/05/74/5b/46/a-beautiful-sunrise-at.jpg" alt="Beautiful sunrise at tropical Hawaiian B&B" style="width:100%; display:block;">
+    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM3MDU1MzMxNDMyOTMxMzczMA==/original/fac5bd7c-4a62-4479-a11b-b57485129a9d.png?im_w=720" alt="Cozy private cottage with ocean view" style="width:100%; display:block;">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/f0/f0/52/sunset-at-north-shore.jpg?w=900&h=500&s=1" alt="Stunning sunset view from North Shore lookout" style="width:100%; display:block;">
+    <img src="https://images.trvl-media.com/lodging/45000000/44090000/44082400/44082306/98d60057.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt="Tropical ocean view cottage at sunrise" style="width:100%; display:block;">
+</div>
+<p style="text-align:center; font-style:italic; color:#666;">Images gently fade every 4 seconds</p>
+   
+   <section>
+       <h2>Find Us on the Map</h2>
+       <p>We're conveniently located in the heart of Hawaiʻi—explore our beautiful surroundings!</p>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.745!2d-157.839!3d21.281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006ebed8f67b3b%3A0x63cff2a8a9e7e1a3!2sWaikiki%20Beach!5e0!3m2!1sen!2sus!4v1720000000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+
+ </main>
+
+  <footer>
+      Copyright &copy; 2025<br>
+      <a href="mailto:dgluna@amarillocollege.com">David Granados</a>
+  </footer>
+
+</div>
+</body>
+</html>

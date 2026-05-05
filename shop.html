@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Island Gift Shop</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/shop.js" defer></script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<header>
+    <h1> Island Gift Shop </h1>
+</header>
+
+<nav>
+<ul> 
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rooms/express.html">Express Room</a></li>
+    <li><a href="rooms/standard.html">Standard Room</a></li>
+    <li><a href="events/weekend.html">Weekend Events</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="daves_calendar.html">Calendar</a></li> 
+    <li><a href="costs/reservations.html">Make reservations</a></li>
+    <li><a href="cart.html">View Cart</a></li>
+</ul>
+</nav>
+
+<main>
+
+<h2>Take Home a Piece of Paradise 🌴</h2>
+
+<!-- ITEM 1 -->
+<div class="product">
+    <h3>Hawaiian Shirt</h3>
+    <img src="images/hawaiian_shirt.png" width="150">
+
+    <p>Size:</p>
+    <select id="size1">
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+    </select>
+
+    <p>Quantity:</p>
+    <input type="number" id="qty1" value="1" min="1">
+
+    <button onclick="addToCart('Hawaiian Shirt','size1','qty1')">Add to Cart</button>
+</div>
+
+<!-- ITEM 2 -->
+<div class="product">
+    <h3>Coconut Candle</h3>
+    <img src="images/candle.png" width="150">
+
+    <p>Quantity:</p>
+    <input type="number" id="qty2" value="1" min="1">
+
+    <button onclick="addToCart('Coconut Candle','','qty2')">Add to Cart</button>
+</div>
+
+<!-- ITEM 3 -->
+<div class="product">
+    <h3>Beach Towel</h3>
+    <img src="images/beach_towel.png" width="150">
+
+    <p>Quantity:</p>
+    <input type="number" id="qty3" value="1" min="1">
+
+    <button onclick="addToCart('Beach Towel','','qty3')">Add to Cart</button>
+</div>
+
+<!-- ITEM 4 -->
+<div class="product">
+    <h3>Surfboard Keychain</h3>
+    <img src="images/keychain.png" width="150">
+
+    <p>Quantity:</p>
+    <input type="number" id="qty4" value="1" min="1">
+
+    <button onclick="addToCart('Surfboard Keychain','','qty4')">Add to Cart</button>
+</div>
+
+<!-- ITEM 5 -->
+<div class="product">
+    <h3>Flower Lei</h3>
+    <img src="images/flower_lei.png" width="150">
+
+    <p>Quantity:</p>
+    <input type="number" id="qty5" value="1" min="1">
+
+    <button onclick="addToCart('Flower Lei','','qty5')">Add to Cart</button>
+</div>
+
+</main>
+</div>
+</body>
+</html>
